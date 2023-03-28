@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\0f7ddc3c-4d08-4a80-9e1d-d9f7ab77cfd5.jpg",
+      "PackagePath": "staticwebassets\\Images\\0f7ddc3c-4d08-4a80-9e1d-d9f7ab77cfd5.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\14486d90-ce4e-454a-9838-d27caadde971.jpg",
+      "PackagePath": "staticwebassets\\Images\\14486d90-ce4e-454a-9838-d27caadde971.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\1a900169-e4f0-4a78-858d-68534d64313a.jpg",
+      "PackagePath": "staticwebassets\\Images\\1a900169-e4f0-4a78-858d-68534d64313a.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\515152aa-813a-4048-a3ea-9741380d9a01.jpg",
+      "PackagePath": "staticwebassets\\Images\\515152aa-813a-4048-a3ea-9741380d9a01.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\740683e9-3553-4522-a1e0-2212999d7159.jpg",
+      "PackagePath": "staticwebassets\\Images\\740683e9-3553-4522-a1e0-2212999d7159.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\9c600f23-3beb-4b48-a9c3-9d5d4bad16e4.png",
+      "PackagePath": "staticwebassets\\Images\\9c600f23-3beb-4b48-a9c3-9d5d4bad16e4.png"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\a4151421-6121-43b7-89ed-057cbbddcc2e.jpg",
+      "PackagePath": "staticwebassets\\Images\\a4151421-6121-43b7-89ed-057cbbddcc2e.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\a68ff32f-e226-49c4-bb23-b497faa61119.jpg",
+      "PackagePath": "staticwebassets\\Images\\a68ff32f-e226-49c4-bb23-b497faa61119.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\b034baa5-b111-4dcb-b543-a91a5c0515ac.jpg",
+      "PackagePath": "staticwebassets\\Images\\b034baa5-b111-4dcb-b543-a91a5c0515ac.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\ca4021e0-080c-4a86-9328-c40347be8bfa.png",
+      "PackagePath": "staticwebassets\\Images\\ca4021e0-080c-4a86-9328-c40347be8bfa.png"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\ce3005e1-33d5-435b-847d-82a321edc1ce.jpg",
+      "PackagePath": "staticwebassets\\Images\\ce3005e1-33d5-435b-847d-82a321edc1ce.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\d0d7876b-0642-4eb3-95ea-2f4d33db32b5.jpg",
+      "PackagePath": "staticwebassets\\Images\\d0d7876b-0642-4eb3-95ea-2f4d33db32b5.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\d2957f06-ea6e-4dec-8314-20db268d05d0.jpg",
+      "PackagePath": "staticwebassets\\Images\\d2957f06-ea6e-4dec-8314-20db268d05d0.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\default.jpg",
+      "PackagePath": "staticwebassets\\Images\\default.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\e0b9a797-71f5-4e3e-be1b-f867d6460a9e.jpg",
+      "PackagePath": "staticwebassets\\Images\\e0b9a797-71f5-4e3e-be1b-f867d6460a9e.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\e2102dda-0e50-4887-af71-bc7d084b6ba5.jpg",
+      "PackagePath": "staticwebassets\\Images\\e2102dda-0e50-4887-af71-bc7d084b6ba5.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\ec00f3ad-3da8-42b1-a746-6d87b449bb31.png",
+      "PackagePath": "staticwebassets\\Images\\ec00f3ad-3da8-42b1-a746-6d87b449bb31.png"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\eefbd638-36d3-4c1a-b71c-a772b2a0ee9e.jpg",
+      "PackagePath": "staticwebassets\\Images\\eefbd638-36d3-4c1a-b71c-a772b2a0ee9e.jpg"
+    },
+    {
+      "Id": "D:\\BlazorMasterDetail\\MasterDetail_flower\\MasterDetail\\Server\\wwwroot\\Images\\loading.gif",
+      "PackagePath": "staticwebassets\\Images\\loading.gif"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MasterDetail.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MasterDetail.Server.props",
+      "PackagePath": "build\\MasterDetail.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MasterDetail.Server.props",
+      "PackagePath": "buildMultiTargeting\\MasterDetail.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MasterDetail.Server.props",
+      "PackagePath": "buildTransitive\\MasterDetail.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

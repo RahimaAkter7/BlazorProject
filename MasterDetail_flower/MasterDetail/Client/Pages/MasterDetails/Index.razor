@@ -1,0 +1,84 @@
+﻿@page "/index"
+@using MasterDetail.Shared;
+@inject HttpClient http
+@inject NavigationManager navigationManager
+
+
+<h3 class=" d-flex justify-content-center" style="color:green;">FlowerShop Store Management System</h3>
+<div class="d-flex justify-content-end mb-2">
+    <a class="btn btn-primary btm-sm" href="/create">Add New</a>
+</div>
+@if (flowers is null)
+{
+    <div class="d-flex justify-content-center mt-5">
+        <img src="/Images/loading.gif" />
+    </div>
+}
+@if (flowers is not null)
+{
+    @foreach (var flower in flowers)
+    {
+        <div class="card  mb-3">
+            <div class="card-header d-flex justify-content-between">
+                <div style="font-weight:bold;color:forestgreen">
+                    <img src="/Images/@flower.Picture" width="70" class="mr-2" />
+                    Name: @flower.FlowerName
+                </div>
+                <div>
+                    <a class="btn btn-success" href="flower/edit/@flower.FlowerId">Edit</a>
+                    <a class="btn btn-danger" @onclick="@(()=> Delete(flower.FlowerId))">Delete</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped table-sm">
+                    <thead>
+                        <tr style="color:black">
+                            <th>Id</th>
+                            <th>BouquetType</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var singleEntry in flower.StoreEntries)
+                        {
+                            <tr>
+                                <td>@singleEntry.BouquetTypeId</td>
+                                <td>@singleEntry.BouquetType.BouquetTypeName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+}
+
+
+
+@code {
+    List<Flower> flowers { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+    async Task LoadData()
+    {
+        flowers = await http.GetFromJsonAsync<List<Flower>>("api/MasterDetails/GetFlowers");
+    }
+
+    async Task Delete(int flowerId)
+    {
+        var response = await http.DeleteAsync($"api/MasterDetails/{flowerId}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // remove the deleted customer from the list
+            flowers.RemoveAll(c => c.FlowerId == flowerId);
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine(await response.Content.ReadAsStringAsync());
+        }
+    }
+}

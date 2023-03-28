@@ -1,0 +1,6 @@
+
+ update-database -context 'FlowerDbContext'
+ update-database -context 'ApplicationDbConext'
+
+
+register And login first

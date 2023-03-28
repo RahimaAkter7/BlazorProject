@@ -1,0 +1,79 @@
+﻿@page "/create"
+@using MasterDetail.Shared
+@inject HttpClient http
+@inject NavigationManager navigationManager
+
+<h3>Add a new Flower</h3>
+<FlowerForm flower="flower" OnValidSubmit="OnValidSubmit" bouquetTypes="bouquetTypes" SelectedFileChanged="HandleFileChanged"></FlowerForm>
+<div class="d-flex mt-4">
+    <a class="btn btn-link btn-sm" href="Index">Back to list</a>
+</div>
+
+
+@code {
+    FlowerVM flower = new FlowerVM();
+    List<BouquetType>? bouquetTypes = new List<BouquetType>();
+
+    private IBrowserFile selectedFile;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+    async Task LoadData()
+    {
+        selectedFile = null;
+        bouquetTypes = await http.GetFromJsonAsync<List<BouquetType>>("api/MasterDetails/GetTypes");
+        flower.BouquetTypeList.Add(new BouquetType());
+    }
+
+    private async Task HandleFileChanged(IBrowserFile file)
+    {
+        selectedFile = file;
+        Console.WriteLine(selectedFile.Name);
+    }
+
+    private async Task OnValidSubmit()
+    {
+        var formData = new MultipartFormDataContent();
+
+        foreach (var prop in typeof(FlowerVM).GetProperties())
+        {
+            var value = prop.GetValue(flower);
+            if (value != null)
+            {
+                if (prop.Name == "BouquetTypeList")
+                {
+                    for (int i = 0; i < flower.BouquetTypeList.Count(); i++)
+                    {
+                        formData.Add(new StringContent(flower.BouquetTypeList[i].BouquetTypeId.ToString()), "BouquetTypeList[" + i + "].BouquetTypeId");
+                    }
+                    continue;
+                }
+                formData.Add(new StringContent(value.ToString()), prop.Name);
+            }
+        }
+        if (selectedFile is not null)
+        {
+            var fileContent = new StreamContent(selectedFile.OpenReadStream());
+            formData.Add(fileContent, "PictureFile", selectedFile.Name);
+        }
+
+        var response = await http.PostAsync("api/MasterDetails", formData);
+
+        var body = await response.Content.ReadAsStringAsync();
+
+        if (response.IsSuccessStatusCode)
+        {
+            // success
+            Console.WriteLine($"the id of the user is: {body}");
+            navigationManager.NavigateTo("Index");
+        }
+        else
+        {
+            // not success
+            Console.WriteLine(body);
+        }
+
+    }
+}
